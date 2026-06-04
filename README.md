@@ -1,3 +1,15 @@
+## Thông tin sinh viên
+
+**MÔN HỌC:** Cấu trúc dữ liệu và giải thuật  
+**THỜI GIAN HỌC:** HK2(2025-2026),từ tháng 3 đến tháng 7
+
+**HỌ VÀ TÊN SINH VIÊN:** Lê Trung Vinh  
+**MSSV:** 25120470  
+**HỌ VÀ TÊN SINH VIÊN:** Huỳnh Trịnh Chí Tài
+**MSSV:** 25120431
+**HỌ VÀ TÊN SINH VIÊN:** Nguyễn Trương Đức Tiến
+**MSSV:** 25120446
+
 # BÁO CÁO: PHÂN TÍCH VÀ TỐI ƯU HÓA CÁC THUẬT TOÁN SẮP XẾP
 
 ---
