@@ -111,9 +111,6 @@ Mỗi chuỗi dạng: `[tiền tố dài] + [mã nhóm] + [đuôi 4 ký tự]`. 
 **Bucket Sort theo độ dài:** `vector<string> a[101]` → chia bài toán lớn thành các nhóm cùng độ dài, loại bỏ phép so sánh chênh lệch độ dài, O(N).
 
 **MSD Radix Sort:** Tại mỗi vị trí `pos`, dùng Counting Sort với `cnt[27]` để phân phối vào các bucket theo ký tự, rồi đệ quy. Độ phức tạp O(W) với W là tổng độ dài chuỗi.
-
-**Hướng tối ưu:** Dùng `std::sort` khi `r - l < 15`; dùng `std::move` thay copy cho mảng `temp`; chỉ duyệt đến độ dài lớn nhất thực tế.
-
 ---
 
 ## 3.2. Bộ sinh test
@@ -123,8 +120,8 @@ Mỗi chuỗi dạng: `[tiền tố dài] + [mã nhóm] + [đuôi 4 ký tự]`. 
 | 1 | N=9999, tiền tố 2 ký tự giảm dần + 100 ký tự `a`, chu kỳ 676 | Quick Sort không tối ưu pivot → cây đệ quy lệch → O(N²) |
 | 2 | N=9999, dài 100: 2 ký tự nghịch thế + 97 ký tự `b` + 1 ký tự phân định | Buộc đọc 97 ký tự giống nhau trước khi tìm điểm khác → O(N²×L) |
 | 3 | N=9999, 25 chuỗi giống nhau/khối, tiền tố giảm dần + nhảy vọt | Quick Sort thiếu phân hoạch 3 chiều → hoán vị dư thừa → O(N²) |
-| 4 | N=9999, LCP 97 ký tự, điểm phân định ở vị trí 98 | Chi phí so sánh O(L) → Quick Sort, TimSort bị bào mòn |
-| 5 | N=9999, LCP 99 ký tự, khối tăng dần xen kẽ nội bộ giảm dần | Chi phí so sánh cực đại + phá vỡ logic TimSort/Natural Merge |
+| 4 | N=9999, LCP 97 ký tự, điểm phân định ở vị trí 98 | Chi phí so sánh O(L) → Quick Sort|
+| 5 | N=9999, LCP 99 ký tự, khối tăng dần xen kẽ nội bộ giảm dần | Chi phí so sánh cực đại|
 
 ---
 
